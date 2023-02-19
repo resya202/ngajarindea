@@ -1,8 +1,10 @@
-let kata = "" // isi dengan value yang diinginkan
+let kata = 0; // isi dengan value yang diinginkan
 
 if (typeof kata === 'string') {
     console.log(`username ${kata}`);
-} else if (typeof kata === 'number') {
+} else if (kata === 0){
+    console.log("invalida data")
+}else if (typeof kata === 'number') {
     console.log(`age: ${kata}`);
 } else if (typeof kata === 'boolean') {
     if (kata) {
@@ -15,6 +17,7 @@ if (typeof kata === 'string') {
         console.log('Invalid data');
     }
 }
+
 
 //Program di atas menggunakan conditional branching yang terdiri dari if, else if, dan else
 //Setiap kondisi dibuat dengan memanfaatkan typeof untuk mengecek tipe data dari variabel kata.

@@ -1,5 +1,5 @@
 // palindrom
-let kata = 'kasur rusak';
+let kata = 'katak';
 let palindrome = true;
 
 for (let i = 0; i < kata.length / 2; i++) {
