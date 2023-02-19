@@ -1,4 +1,4 @@
-function hitungJumlahKata(kalimat) {
+    let kalimat = "I have a dream"
     let jumlahKata = 0;
     let kataSekarang = '';
 
@@ -17,8 +17,8 @@ function hitungJumlahKata(kalimat) {
         }
     }
 
-    return jumlahKata;
-}
+    console.log(jumlahKata)
+
 
 //Cara kerja program ini adalah dengan mengiterasi setiap karakter dalam kalimat menggunakan loop for. 
 //Ketika menemukan sebuah karakter yang bukan spasi, karakter tersebut ditambahkan ke variabel kataSekarang. 

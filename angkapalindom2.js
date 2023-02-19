@@ -1,6 +1,7 @@
 
 
-function angkaPalindrome(angka) {
+    let angka = 75;
+    
     while (true) {
         angka++;
         let angkaString = angka.toString();
@@ -11,8 +12,6 @@ function angkaPalindrome(angka) {
         }
 
         if (angkaString === reversedString) {
-            return angka;
-            
+            console.log(angka);
         }
     }
-}

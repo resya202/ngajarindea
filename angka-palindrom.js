@@ -1,30 +1,29 @@
 
-let num = 175
+let angka = 4
+let palindrome;
 
-
-function angkaPalindrome(num) {
-    function isPalindrome(number) {
-        let strNum = number.toString();
-        let left = 0;
-        let right = strNum.length - 1;
-        while (left < right) {
-            if (strNum[left] !== strNum[right]) {
-                console.log("hi")
-                return false;
+if (angka <= 10){
+    palindrome = angka + 1
+    console.log(palindrome);
+} else if (angka < 100){
+    for (i = angka; angka < 100; i++){
+            angka++
+            if(angka.toString()[0] === angka.toString()[1]){
+                palindrome = angka
+                console.log(palindrome);
+                break
             }
-            left++;
-            right--;
         }
-        return true;
-    }
-
-    num++;
-    while (!isPalindrome(num)) {
-        num++;
-    }
-    console.log({$num});
+} else if (angka < 1000){
+    for (j = angka; angka < 1000; j++){
+            angka++
+            if(angka.toString()[0] === angka.toString()[2]){
+                palindrome = angka
+                console.log(palindrome);
+                break
+            }
+        }
 }
-
 
 //Fungsi angkaPalindrome menerima sebuah argumen num.
 //Fungsi isPalindrome menerima sebuah argumen number dan mengembalikan nilai boolean true jika number adalah sebuah palindrome dan false jika tidak.
