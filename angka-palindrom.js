@@ -1,10 +1,10 @@
 
-let angka = 4
+let angka = 5
 let palindrome;
 
 if (angka <= 10){
-    palindrome = angka + 1
-    console.log(palindrome);
+    palindrome = angka + 1 
+    console.log(palindrome)
 } else if (angka < 100){
     for (i = angka; angka < 100; i++){
             angka++
